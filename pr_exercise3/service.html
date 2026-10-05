@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel:wght@400..900&family=Cookie&family=Coral+Pixels&family=Fragment+Mono:ital@0;1&family=Gloock&family=Henny+Penny&family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Luxurious+Script&family=Martian+Mono:wght@100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <title>crazExercise3</title>
+    <style>
+        #bar a:hover{
+            color: red;
+        }
+        #bar a{
+            color: black;
+        }
+        body{
+            margin: 0;
+        }
+        #banner{
+            animation: slideUp 1.5s ease-out;
+        }
+        @keyframes slideUp {
+            from {
+                transform: translateY(500px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        #box div:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <nav id="bar" style="display: flex; gap: 300px; justify-content: center; align-items: center; font-size: 20px;  font-family: 'Alegreya' ,serif; background-color: rgba(0, 0, 0, 0.3); height: 60px">
+                <a href="./home.html" style="text-decoration: none;">Home</a>
+                <a href="./about.html" style="text-decoration: none;">About us</a>
+                <a href="./service.html" style="text-decoration: none; color: darkred">Our services</a>
+                <a href="./contact.html" style="text-decoration: none;">Contact</a>
+            </nav>
+        </header>
+        <div id="banner" style="font-family: 'Unbounded', sans-serif;display: flex; flex-direction: column; align-items: center; position: relative; top: 40px; gap: 80px">
+            <p style="font-size: 50px; letter-spacing: -0.02rem;">Our service</p>
+            <div id="box" style="display: flex; flex-direction: row; gap: 30px">
+                <div style="border: 1px solid black; border-radius: 10px; width: 250px; height: 250px; display:flex;  flex-direction: column; justify-content: center; align-items: center; gap:20px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); transition: transform 0.3s ease;">
+                    <p style="margin-bottom: 20px; font-weight: 500;">Fragrance Collection</p>
+                    <img src="../../image/trio.png" alt="trio" style="filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5)); width: 200px; transform: translateY(-15px);">
+                </div>
+                <div style="border: 1px solid black; border-radius: 10px; width: 250px; height: 250px; display:flex;  flex-direction: column; justify-content: center; align-items: center; gap:20px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); transition: transform 0.3s ease;">
+                    <p style="margin-bottom: 20px; font-weight: 500; transform: translateY(-10px);">Frag Recommendation</p>
+                    <img src="../../image/diff.png" alt="trio" style="filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5)); width: 200px; transform: scale(1.2) translateY(-15px);">
+                </div>
+                <div style="border: 1px solid black; border-radius: 10px; width: 250px; height: 250px; display:flex;  flex-direction: column; justify-content: center; align-items: center; gap:20px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); transition: transform 0.3s ease;">
+                    <p style="margin-bottom: 20px; font-weight: 500; transform: translateY(5px);">Scent Guide</p>
+                    <img src="../../image/yedp.png" alt="trio" style="filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5)); width: 200px; transform: translateY(-15px);">
+                </div>
+                <div style="border: 1px solid black; border-radius: 10px; width: 250px; height: 250px; display:flex;  flex-direction: column; justify-content: center; align-items: center; gap:20px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); transition: transform 0.3s ease;">
+                    <p style="margin-bottom: 20px; font-weight: 500; transform: translateY(15px);">Gift selection</p>
+                    <img src="../../image/gift.png" alt="trio" style="filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5)); width: 200px; transform: scale(0.90) translateY(-10px);">
+                </div>
+                <div style="border: 1px solid black; border-radius: 10px; width: 250px; height: 250px; display:flex;  flex-direction: column; justify-content: center; align-items: center; gap:20px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); transition: transform 0.3s ease;">
+                    <p style="margin-bottom: 20px; font-weight: 500; transform: translateY(15px);">Customer support</p>
+                    <img src="../../image/gift.png" alt="trio" style="filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5)); width: 200px; transform: scale(0.90) translateY(-10px);">
+                </div>
+            </div>
+            <div style="text-align: center; width: 800px; display: flex; flex-direction: column; gap:18 px; transform: translateY(-10px);">
+                <p style="font-size: 20px;">Discover Your Signature Scent</p>
+                <p style="font-family: 'Alegreya', serif; font-size: 20px; letter-spacing: -0.5px;">Finding the right fragrance is a personal experience. Every scent carries its own character, from fresh and floral notes to warm, sweet, and woody aromas. Explore our collection and discover fragrances carefully selected to match different personalities, moods, and special moments. Whether you are looking for a scent for yourself or a thoughtful gift for someone special, we are here to help you find the perfect choice.</p>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
